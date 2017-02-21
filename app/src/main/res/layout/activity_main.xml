@@ -11,14 +11,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ir.bwf.presentation.MainActivity">
 
-    <Button
-        android:text="یاران رایان"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_yaran"
-        android:layout_above="@+id/btn_peyk"
-        android:layout_alignParentStart="true" />
-
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,53 +19,45 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
-    <Button
-        android:text="پراش"
+    <ImageButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_parash"
-        android:layout_above="@+id/btn_yaran"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:text="درباره ما"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_about"
-        android:layout_below="@+id/btn_faq"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:text="تماس با ما"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_tel"
-        android:layout_below="@+id/btn_about"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:text="پرسش های متداول"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_faq"
-        android:layout_marginTop="12dp"
-        android:layout_below="@+id/btn_peyk"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:text="هاستینگ تیتان"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_host"
-        android:layout_below="@+id/btn_tel"
-        android:layout_alignParentEnd="true" />
-
-    <Button
-        android:text="پیک فناوری اطلاعات"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_peyk"
+        app:srcCompat="@drawable/titanbtn"
+        android:id="@+id/imageButton2"
+        android:scaleType="fitXY"
         android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/parashbtn"
+        android:id="@+id/imgbtn_parash"
+        android:visibility="visible"
+        android:src="@drawable/parashbtn"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:layout_above="@+id/imageButton2" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rayanbtn"
+        android:id="@+id/imageButton4"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/imageButton2"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/imageButton3" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/peykbtn"
+        android:id="@+id/imageButton3"
+        android:elevation="0dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
 
 </RelativeLayout>
