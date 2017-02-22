@@ -18,6 +18,12 @@
         <activity android:name=".Parash">
 
         </activity>
+        <activity android:name=".Video">
+
+        </activity>
+        <activity android:name=".Gallery">
+
+        </activity>
     </application>
 
 </manifest>
